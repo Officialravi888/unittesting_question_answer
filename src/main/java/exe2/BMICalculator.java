@@ -1,18 +1,18 @@
 package exe2;
 
 public class BMICalculator {
-        public double calculateBMI(double height, double weight) {
+        public Integer calculateBMI(Integer height, Integer weight) {
             return weight / (height * height);
         }
 
-        public boolean isUnderweight(double bmi) {
-            return bmi < 18.5;
+        public boolean isUnderweight(Integer bmi) {
+            return bmi < 18;
         }
 
-        public boolean isNormalWeight(double bmi) {
+        public boolean isNormalWeight(Integer bmi) {
             return bmi >= 18.5 && bmi < 25;
         }
-        public double calculatesBMI(double height, double weight) {
+        public Integer calculatesBMI(Integer height, Integer weight) {
             if (weight <= 0) {
                 throw new IllegalArgumentException("Weight must be a positive value");
             }
